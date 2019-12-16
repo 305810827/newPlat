@@ -1,0 +1,73 @@
+/* pages/newContent/newContent.wxss */
+
+.content-box {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10rpx 30rpx;
+}
+.content-box::after{
+  content: '';
+  display: block;
+  height: 45px;
+}
+
+.title text {
+  font-size: 50rpx;
+  font-weight: bold;
+}
+
+.dec {
+  margin: 10px 0;
+}
+
+.source,.postTime {
+  font-size: 14px;
+  color: #a5a5a5;
+  margin-right: 10px;
+}
+
+.foot {
+  width: 100%;
+  height: 40px;
+  position: fixed;
+  z-index: 99px;
+  bottom: 0;
+  margin: 0px auto;
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+  display: flex;
+}
+
+.foot {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.foot .collected text {
+  font-size: 24px;
+}
+.collectIcon{
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 10rpx;
+
+}
+.collect-box{
+  display: flex;
+  align-items: center;
+  margin-right: 40rpx;
+}
+.foot .collected text:last-child {
+  font-size: 18px;
+  margin-left: 5px;
+}
+
+.red {
+  color: red;
+}
+
+.noContent {
+  margin-right: 60rpx;
+  color: red;
+}

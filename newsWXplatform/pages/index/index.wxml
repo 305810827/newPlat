@@ -1,0 +1,17 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="navbar">
+    <view class="menu">
+      <text wx:for="{{navbarText}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text>
+    </view>
+    <icon type="search" size="30" color="white" bindtap="toSearch" />
+  </view>
+  <view class="news-box">
+    <newsList id="srollList" news="{{news}}"></newsList>
+    <view class="load_more" hidden="{{!loading}}">
+      <view class="load_loading"></view>
+      <view class="load-tips">正在加载……</view>
+    </view>
+    <view class="load_end" hidden="{{!loaded}}">没有更多数据了……</view>
+  </view>
+</view>

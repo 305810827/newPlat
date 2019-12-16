@@ -1,0 +1,62 @@
+  .items-container{
+    width: 100%;
+    padding: 0 25rpx;
+    box-sizing: border-box;
+  }
+  .list-item{
+	  width: 100%;
+	  height: 185rpx;
+	  border-bottom: 1px solid #F3F3F3;
+	  display: flex;
+    margin-top: 20rpx;
+	}
+	.list-item .lLf{
+	  width: 100%;
+	  flex: 3;
+	  height: 85px;
+	}
+	.list-item .lLf .lTitle{
+	  /* --------------- */
+	  overflow: hidden;
+	  display: -webkit-box;
+	  -webkit-box-orient: vertical;
+	  -webkit-line-clamp: 2;
+	  /* --------------- */
+	  line-height: 22px;
+	  height: 44px;
+	  width: 95%;
+	}
+	.time-box{
+		overflow: hidden;
+	}
+	.list-item .lLf .lTime,
+	.list-item .lLf .lFrom{
+	  margin-top: 8px;
+	  font-size: 12px;
+	  letter-spacing: 1px;
+	  line-height: 22px;
+	  color: #a5a5a5;
+	}
+	.list-item .lLf .lFrom{
+		float: left;
+    display:block;
+    width: 55%;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    /* word-wrap: break-word;
+    word-break: break-all;
+    white-space: pre-line; */
+	}
+	.list-item .lLf .lTime{
+		float: right;
+		margin-right: 30rpx;
+	}
+	.list-item .lRt{
+	  width: 100%;
+	  flex: 1;
+	}
+	.list-item .lRt image{
+	  width: 260rpx;
+    height:165rpx;
+	}

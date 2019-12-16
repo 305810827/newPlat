@@ -1,0 +1,9 @@
+<!--pages/myCollect/myCollect.wxml-->
+<view class="container">
+    <view class="news-box" wx:if="news.length!==0">
+			<newsList news="{{news}}"></newsList>
+		</view>
+		<view class="noContent" wx:else>
+			<text>暂无收藏!!!</text>
+		</view>
+</view>

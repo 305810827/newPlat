@@ -1,0 +1,27 @@
+var transTime = function(time){
+  if (time == -1 || !time){
+    time = Date.now();
+  }
+  var date = getDate(parseInt(time)); //返回当前时间对象
+  var month = date.getMonth() + 1
+  var day = date.getDate()
+  return [month, day].join('-')
+}
+
+var transToday = function (time){
+  if (!time) {
+    time = Date.now();
+  }
+  var date = getDate(parseInt(time));
+  var hour = date.getHours()
+  var minute = date.getMinutes()
+  return '今天 ' + [hour, minute].map(formatNumber).join(':')
+}
+var formatNumber = function(n) {
+  n = n.toString()
+  return n[1] ? n : '0' + n
+}
+module.exports = {
+  transTime: transTime,
+  transToday: transToday
+}

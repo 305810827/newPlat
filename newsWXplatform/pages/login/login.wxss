@@ -1,0 +1,42 @@
+/* pages/login/login.wxss */
+image{
+  width: 60rpx;
+  height: 60rpx;
+  margin: 30rpx 0 10rpx 50rpx;
+}
+input{
+  width: 90%;
+  height: 30px;
+  border: 1rpx solid red;
+  padding: 0rpx 20rpx;
+  margin: 30rpx auto;
+  box-sizing: border-box;
+  border-radius: 5px;
+  
+}
+#login{
+  width: 90%;
+  height: 40rpx;
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+  margin-top:40rpx
+}
+
+navigator{
+ width: 100rpx;
+ height: 60rpx;
+ text-align: center;
+ margin: 50rpx 50rpx 0 0;
+ float:right;
+ text-decoration: underline;
+}
+.navigator-hover{
+  color: blue
+}
+.tip{
+  color: red;
+  font-size: 18px;
+  margin-left: 50rpx;
+
+}

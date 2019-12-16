@@ -1,0 +1,7 @@
+/* pages/myCollect/myCollect.wxss */
+.noContent{
+		height: 800rpx;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}

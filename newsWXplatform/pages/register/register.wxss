@@ -1,0 +1,39 @@
+/* pages/login/login.wxss */
+@import '../../utils/weui.wxss';
+input{
+  width: 90%;
+  height: 30px;
+  border: 1rpx solid red;
+  padding: 5px 10px;
+  margin: 15px auto;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+#register{
+  width: 90%;
+  height: 20px;
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+  margin-top:20px
+}
+navigator{
+ width: 100rpx;
+ height: 60rpx;
+ text-align: center;
+ margin: 50rpx 50rpx 0 0;
+ float:right;
+ text-decoration: underline;
+}
+.navigator-hover{
+  color: blue
+}
+.uploader-box{
+  padding: 0 50rpx;
+}
+.tip{
+  color: red;
+  font-size: 18px;
+  margin-left: 50rpx;
+
+}

@@ -1,0 +1,18 @@
+<!--pages/search/search.wxml-->
+<view class="container">
+  <view class="search">
+    <input bindinput="bindKeyInput" placeholder="输入关键字" />
+    <icon type="search" size="30" bindtap="search"></icon>
+  </view>
+  <view class="news-box">
+    <newsList news="{{news}}" wx:if="{{news.length!==0}}"></newsList>
+    <view class="noContent" wx:else>
+      <text>没有搜索到任何相关信息！！</text>
+    </view>
+    <view class="load_more" hidden="{{!loading}}">
+      <view class="load_loading"></view>
+      <view class="load-tips">正在加载……</view>
+    </view>
+    <view class="load_end" hidden="{{!loaded}}">没有更多数据了……</view>
+  </view>
+</view>

@@ -1,0 +1,19 @@
+<wxs module="timeutil" src="../../utils/timeUtil.wxs"></wxs>
+<!-- template模板化并无模块化 -->
+<view class="items-container">
+  <view class="list-item" wx:for="{{news}}" wx:key="unique" data-id="{{item._id}}" bindtap="toContent">
+    <view class="lLf">
+      <view class="lTitle">
+        {{item.title}}
+      </view>
+      <view class="time-box">
+        <text class="lFrom">{{item.source}}-{{item.className}}</text>
+        <text class="lTime">{{timeutil.transTime(item.postTime) === timeutil.transTime(-1) ? timeutil.transToday(item.postTime) : timeutil.transTime(item.postTime)}}</text>
+      </view>
+    </view>
+    <view class="lRt">
+      <image src="{{item.img ? item.img : '/image/demo1.png'}}" binderror="imgErr"></image>
+    </view>
+  </view>
+
+</view>

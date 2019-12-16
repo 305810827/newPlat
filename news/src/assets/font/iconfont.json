@@ -1,0 +1,65 @@
+{
+  "id": "1517603",
+  "name": "news",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "562667",
+      "name": "back",
+      "font_class": "back",
+      "unicode": "e618",
+      "unicode_decimal": 58904
+    },
+    {
+      "icon_id": "1002521",
+      "name": "首页",
+      "font_class": "shouye",
+      "unicode": "e626",
+      "unicode_decimal": 58918
+    },
+    {
+      "icon_id": "2406020",
+      "name": "加",
+      "font_class": "jia1",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "7340301",
+      "name": "收 藏",
+      "font_class": "wuxiaoxing-kong",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "7394670",
+      "name": "加",
+      "font_class": "jia",
+      "unicode": "e61e",
+      "unicode_decimal": 58910
+    },
+    {
+      "icon_id": "7583369",
+      "name": "我的",
+      "font_class": "wode",
+      "unicode": "e686",
+      "unicode_decimal": 59014
+    },
+    {
+      "icon_id": "8441287",
+      "name": "收 藏 (1)",
+      "font_class": "shoucang",
+      "unicode": "e627",
+      "unicode_decimal": 58919
+    },
+    {
+      "icon_id": "10318793",
+      "name": "search",
+      "font_class": "-search1",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+<!-- wxParse用来转换html标签 -->
+
+<!--pages/newContent/newContent.wxml-->
+<view class="container">
+  <view class="content-box">
+    <view class="title">
+      <text>{{news.title}}</text>
+    </view>
+    <view class="dec">
+      <text class='source'>来源: {{news.source}}</text>
+      <text class='postTime'>{{formatTime(Number(news.postTime)) === formatTime(Date.now()) ? toDayTime(Number(news.postTime)) : formatTime(Number(news.postTime))}}</text>
+    </view>
+    <view class="content" id="content">
+      <rich-text nodes="{{news.content}}" ></rich-text>
+    </view>
+  </view>
+  <view class="foot">
+    <view wx:if="{{token}}" class="collected {{isCollect ? 'red' : ''}}" bindtap="collected">
+      <view class="collect-box" wx:if="{{isCollect}}">
+        <image class="collectIcon" src="../../image/collect.png"></image>
+        <text>取消收藏</text>
+      </view>
+      <view class="collect-box" wx:else>
+        <image class="collectIcon" src="../../image/cancel.png"></image>
+        <text>收藏</text>
+      </view>
+    </view>
+    <view class="noContent" wx:else bindtap="toLogin">
+      <text bindtap="toLogin">登录后才能进行收藏</text>
+    </view>
+
+  </view>
+
+</view>

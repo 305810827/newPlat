@@ -1,0 +1,13 @@
+<!--pages/login/login.wxml-->
+<view>
+    <image src="../../image/home.png" bindtap="toIndex"></image>
+    <input id="username" type="text" placeholder="用户名" bindinput="checkUsername" bindfocus="hide"></input>
+    <input id="password" password="true" placeholder="密码" bindinput="checkPass" bindfocus="hide"></input>
+    <text class="tip" hidden="{{!isTip}}">{{tip}}</text>
+    <button id="login" formType="submit" bindtap="login">登录</button>
+  
+  <view class="navi-reg">
+    <navigator url="../register/register" open-type="navigate" hover-class="navigator-hover">注册</navigator>
+  </view>
+
+</view>

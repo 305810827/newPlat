@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "newsList": "/components/newsList/newsList"
+  },
+  "navigationBarBackgroundColor": "#fff",
+  "enablePullDownRefresh": true,
+  "backgroundColor": "#F0F0F0",
+  "onReachBottomDistance": 50
+}

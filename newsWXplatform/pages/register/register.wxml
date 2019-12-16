@@ -1,0 +1,33 @@
+<view>
+  <form>
+    <input id="username" type="text" placeholder="用户名" bindinput="checkUsername" bindfocus="hide"></input>
+    <input id="password1" password="true" placeholder="密码" bindinput="checkPass1" bindfocus="hide"></input>
+    <input id="password2" password="true" placeholder="重复密码" bindinput="checkPass2" bindfocus="hide"></input>
+    <text class="tip" hidden="{{!isTip}}">{{tip}}</text>
+    <view class="uploader-box">
+      <view class="weui-cell__bd">
+        <view class="weui-uploader">
+          <view class="weui-uploader__hd">
+            <view class="weui-uploader__tips">
+              头像
+            </view>
+          </view>
+          <view class="weui-uploader__bd">
+            <view class="weui-uploader__files" id="uploaderFiles">
+              <block wx:for="{{files}}" wx:key="*this">
+                <view class="weui-uploader__file" bindtap="previewImage" id="{{item}}">
+                  <image class="weui-uploader__img" src="{{item}}" mode="aspectFill" />
+                </view>
+              </block>
+            </view>
+            <view class="weui-uploader__input-box">
+              <view class="weui-uploader__input" bindtap="chooseImage"></view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view> 
+    <button id="register" formType="submit" bindtap="register">注册</button>
+  </form>
+  <navigator url="../login/login" open-type="navigate" hover-class="navigator-hover">登录</navigator>
+</view>
